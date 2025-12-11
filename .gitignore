@@ -1,0 +1,21 @@
+ Docker
+*.log
+.docker/
+
+# Kubernetes
+*.tmp
+secrets/
+*.secret
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Helm
+charts/*.tgz

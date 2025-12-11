@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkat - DevOps Engineer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 0; text-align: center; margin-bottom: 40px; border-radius: 10px; }
+        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2em; opacity: 0.9; }
+        .section { background: white; margin: 20px 0; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .project { border-left: 4px solid #667eea; padding: 20px; margin: 15px 0; background: #f8f9ff; border-radius: 5px; }
+        .project h3 { color: #667eea; margin-bottom: 10px; }
+        .status { display: inline-block; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; }
+        .completed { background: #d4edda; color: #155724; }
+        .in-progress { background: #fff3cd; color: #856404; }
+        .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .skill { background: #e9ecef; padding: 5px 12px; border-radius: 15px; font-size: 0.9em; }
+        .highlight { background: #667eea; color: white; }
+        footer { text-align: center; margin-top: 40px; color: #666; }
+        .achievement { background: #e8f5e8; border-left: 4px solid #28a745; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .feature-list { list-style: none; padding: 0; }
+        .feature-list li { padding: 5px 0; }
+        .feature-list li:before { content: "✅ "; color: #28a745; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Venkat</h1>
+            <p class="subtitle">DevOps Engineer | Container Orchestration | Cloud Infrastructure | Site Reliability</p>
+        </header>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Passionate DevOps Engineer specializing in containerization, Kubernetes orchestration, and cloud infrastructure automation. Building production-ready, scalable, and secure applications with modern DevOps practices.</p>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <h3>Project 1: Infrastructure as Code Foundation</h3>
+                <span class="status completed">✅ COMPLETED</span>
+                <p>Built complete AWS infrastructure using Terraform with 23 resources including VPC, EC2, S3, IAM, and monitoring. Implemented remote state management and cost optimization.</p>
+                <div class="skills">
+                    <span class="skill">Terraform</span>
+                    <span class="skill">AWS VPC</span>
+                    <span class="skill">Security Groups</span>
+                    <span class="skill">IAM</span>
+                    <span class="skill">S3</span>
+                    <span class="skill">Cost Management</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Project 2: Container Orchestration & Kubernetes</h3>
+                <span class="status completed">✅ COMPLETED</span>
+                <p>Containerized portfolio application with Docker and deployed to Kubernetes with production-ready features including autoscaling, load balancing, and resource management.</p>
+                
+                <div class="achievement">
+                    <h4>Production Features Implemented:</h4>
+                    <ul class="feature-list">
+                        <li>High Availability (2 replica pods with automatic failover)</li>
+                        <li>Auto Scaling (2-10 pods based on CPU usage)</li>
+                        <li>Load Balancing (traffic distribution across pods)</li>
+                        <li>Resource Management (CPU/memory limits and requests)</li>
+                        <li>Real-time Monitoring (metrics-server integration)</li>
+                        <li>Multiple Access Methods (NodePort, port-forward, ingress)</li>
+                    </ul>
+                </div>
+
+                <div class="skills">
+                    <span class="skill highlight">Docker</span>
+                    <span class="skill highlight">Kubernetes</span>
+                    <span class="skill highlight">kubectl</span>
+                    <span class="skill highlight">Helm</span>
+                    <span class="skill">Container Orchestration</span>
+                    <span class="skill">Pod Autoscaling</span>
+                    <span class="skill">Service Networking</span>
+                    <span class="skill">Ingress Controllers</span>
+                    <span class="skill">Resource Quotas</span>
+                    <span class="skill">Security Contexts</span>
+                    <span class="skill">Metrics & Monitoring</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Project 3: CI/CD & GitOps Pipeline</h3>
+                <span class="status in-progress">🚧 NEXT</span>
+                <p>Implementing automated CI/CD pipelines with GitHub Actions and GitOps deployment with ArgoCD for continuous integration and delivery.</p>
+                <div class="skills">
+                    <span class="skill">GitHub Actions</span>
+                    <span class="skill">ArgoCD</span>
+                    <span class="skill">GitOps</span>
+                    <span class="skill">Automated Testing</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill highlight">AWS</span>
+                <span class="skill highlight">Terraform</span>
+                <span class="skill highlight">Docker</span>
+                <span class="skill highlight">Kubernetes</span>
+                <span class="skill highlight">kubectl</span>
+                <span class="skill">Helm</span>
+                <span class="skill">Minikube</span>
+                <span class="skill">Container Orchestration</span>
+                <span class="skill">Pod Autoscaling</span>
+                <span class="skill">Service Mesh</span>
+                <span class="skill">Linux</span>
+                <span class="skill">Git/GitHub</span>
+                <span class="skill">Python</span>
+                <span class="skill">YAML</span>
+                <span class="skill">Infrastructure as Code</span>
+                <span class="skill">Resource Management</span>
+                <span class="skill">Security Policies</span>
+                <span class="skill">Monitoring & Metrics</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Current Infrastructure</h2>
+            <div class="achievement">
+                <h4>This Portfolio is Running On:</h4>
+                <ul class="feature-list">
+                    <li>Containerized with Docker (Nginx + HTML)</li>
+                    <li>Orchestrated with Kubernetes (2 replica pods)</li>
+                    <li>Auto-scaling enabled (2-10 pods, 50% CPU threshold)</li>
+                    <li>Load balanced across multiple pods</li>
+                    <li>Resource limits: 100m CPU, 128Mi memory per pod</li>
+                    <li>Real-time monitoring with metrics-server</li>
+                    <li>Production-ready deployment patterns</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>🐳 This website is containerized with Docker and orchestrated with Kubernetes</p>
+            <p>📊 Currently running 2 pods with auto-scaling (2-10 pods based on CPU usage)</p>
+            <p>⚡ Load balanced and highly available with automatic failover</p>
+            <p>Last updated: December 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -69,7 +69,10 @@ jobs:
     - name: Update deployment manifest
       run: |
         IMAGE_TAG=$(echo "${{ needs.build-and-push.outputs.image-tag }}" | head -1)
-        sed -i "s|image: .*|image: ${IMAGE_TAG}|g" k8s/base/deployment.yaml
+        echo "Updating image to: $IMAGE_TAG"
+        sed -i "s|image:.*|image: ${IMAGE_TAG}|g" k8s/base/deployment.yaml
+        echo "Updated deployment.yaml:"
+        grep -A 1 -B 1 "image:" k8s/base/deployment.yaml
 
     - name: Commit and push changes
       run: |

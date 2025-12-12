@@ -1,4 +1,4 @@
-# Project 2: Container Orchestration & Kubernetes
+# Projects 2+3: Container Orchestration + CI/CD Pipeline
 
 A production-ready containerized portfolio website demonstrating Docker containerization and Kubernetes orchestration with advanced features including autoscaling, load balancing, and resource management.
 
@@ -298,3 +298,41 @@ This project is part of a DevOps learning journey and is available for education
 ## 🤝 Contributing
 
 This is a learning project, but feedback and suggestions are welcome!
+
+
+## 🔄 Project 3: CI/CD & GitOps Pipeline ✅
+
+### Automated Deployment Pipeline
+- **GitHub Actions**: Automated testing, building, and deployment
+- **DockerHub Integration**: Automatic image builds and pushes  
+- **ArgoCD GitOps**: Repository-driven deployments
+- **End-to-End Automation**: Zero manual intervention
+
+### CI/CD Workflow
+```
+Code Push → GitHub Actions → Docker Build → Update Manifests → ArgoCD Sync → Kubernetes Deploy
+```
+
+### Technologies Added
+- **GitHub Actions** - CI/CD automation
+- **ArgoCD** - GitOps deployment controller
+- **DockerHub** - Container registry integration
+- **pytest** - Automated testing framework
+
+### Project Structure Updates
+```
+proj-2-containers/
+├── .github/workflows/ci.yml        # CI/CD pipeline
+├── argocd-app.yaml                 # ArgoCD application
+├── k8s/base/                       # Kubernetes manifests
+│   ├── deployment.yaml             # Auto-updated by CI/CD
+│   └── service.yaml
+├── tests/test_html.py              # Automated tests
+└── requirements.txt                # Python dependencies
+```
+
+### Status: Projects 2+3 COMPLETED ✅
+- Container orchestration with Kubernetes ✅
+- Full CI/CD automation working ✅  
+- Production-ready DevOps pipeline ✅
+- True GitOps workflow implemented ✅

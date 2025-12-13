@@ -48,6 +48,51 @@ This project transforms a static HTML portfolio into a fully containerized, orch
 - **Security Contexts** - Container security (explored)
 
 ### Supporting Tools
+- **Git** - Version control and collaboration
+- **YAML** - Configuration file format
+- **Nginx** - Web server (containerized)
+
+## 🧹 Project Cleanup & Optimization
+
+### Cleanup Summary (December 13, 2025)
+
+During development, we accumulated various files and folders. After implementing our CI/CD pipeline with direct Kubernetes manifests + ArgoCD + GitHub Actions, we identified and cleaned up unnecessary files:
+
+#### Files Removed to Backup:
+- `.venv/` - Python virtual environment (Docker handles dependencies)
+- `.pytest_cache/` - Test cache files (auto-regenerated)
+- `tests/__pycache__/` - Python bytecode cache (auto-regenerated)
+- `.github/workflows/ci.yml.backup` - Backup workflow files
+- `.github/workflows/ci.yml.old` - Old workflow versions
+- `tests/1` - Temporary test files
+- `portfolio-chart/` - Helm chart (not needed for our GitOps approach)
+
+#### Our Optimized CI/CD Stack:
+- **Kubernetes Manifests** (`k8s/base/`) - Direct YAML deployment
+- **GitHub Actions** - Automated CI/CD pipeline
+- **ArgoCD** - GitOps deployment automation
+- **DockerHub** - Container registry
+- **No Helm needed** - Direct K8s manifests work perfectly
+
+#### Cleanup Detection Command:
+```bash
+# Run this script to identify unnecessary files
+./cleanup-check.sh
+```
+
+#### Safety Approach:
+1. **Moved to backup** instead of direct deletion
+2. **Tested CI/CD pipeline** after cleanup
+3. **Verified functionality** - Everything works perfectly
+4. **Kept backups** as safety buffer
+
+#### Results:
+- ✅ **Cleaner project structure**
+- ✅ **Faster CI/CD pipeline** (less files to process)
+- ✅ **Production-ready setup**
+- ✅ **No functionality lost**
+
+### Supporting Tools
 - **Nginx** - Web server (Alpine Linux base)
 - **YAML** - Configuration management
 - **Git** - Version control

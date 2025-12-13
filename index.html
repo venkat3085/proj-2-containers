@@ -18,8 +18,8 @@
         
         .nav-link { display: block; padding: 10px 15px; margin: 5px 0; color: #ecf0f1; text-decoration: none; border-radius: 5px; transition: all 0.3s; font-size: 0.9em; }
         .nav-link:hover { background: rgba(255,255,255,0.1); transform: translateX(5px); }
-        .nav-link.external { color: #3498db; }
-        .nav-link.external:hover { color: #2980b9; }
+        .nav-link.external { color: #1e3a8a; }
+        .nav-link.external:hover { color: #1e40af; }
         
         .status-indicator { display: flex; align-items: center; gap: 8px; padding: 8px 15px; margin: 3px 0; font-size: 0.85em; }
         .status-dot { width: 8px; height: 8px; border-radius: 50%; }
@@ -105,6 +105,7 @@
                 <a href="#project1" class="nav-link">📋 Project 1: Terraform</a>
                 <a href="#project2" class="nav-link">🐳 Project 2: Kubernetes</a>
                 <a href="#project3" class="nav-link">🔄 Project 3: CI/CD</a>
+                <a href="#cleanup" class="nav-link">🧹 Cleanup & Optimization</a>
                 <a href="#project4" class="nav-link">🔒 Project 4: Security</a>
             </div>
             
@@ -275,6 +276,51 @@
                                 <span class="skill">DockerHub</span>
                                 <span class="skill">pytest</span>
                                 <span class="skill">CI/CD</span>
+                            </div>
+                        </div>
+
+                        <div class="project project-completed" id="cleanup">
+                            <div class="project-header">
+                                <div>
+                                    <h3>Cleanup & Optimization</h3>
+                                    <span class="status completed">✅ COMPLETED</span>
+                                </div>
+                                <a href="https://github.com/venkat3085/proj-2-3-containers-CI-CD" target="_blank" class="github-btn">📁 View Code</a>
+                            </div>
+                            <p>Optimized project structure by identifying and safely removing unnecessary files while maintaining full CI/CD functionality.</p>
+                            
+                            <div class="achievement">
+                                <h4>Cleanup Process:</h4>
+                                <ul class="steps-list">
+                                    <li>✅ Analyzed project structure and identified unnecessary files</li>
+                                    <li>✅ Moved files to backup (.venv, caches, backup workflows)</li>
+                                    <li>✅ Created cleanup-check.sh detection tool</li>
+                                    <li>✅ Tested CI/CD pipeline after optimization</li>
+                                    <li>✅ Updated documentation with cleanup methodology</li>
+                                    <li>✅ Verified full functionality maintained</li>
+                                </ul>
+                            </div>
+
+                            <div class="achievement">
+                                <h4>Files Optimized:</h4>
+                                <ul class="steps-list">
+                                    <li>Python virtual environment (.venv/) - Docker handles dependencies</li>
+                                    <li>Test cache files (.pytest_cache/) - Auto-regenerated</li>
+                                    <li>Python bytecode cache (__pycache__/) - Auto-regenerated</li>
+                                    <li>Backup workflow files - Old versions not needed</li>
+                                    <li>Helm charts - Using direct K8s manifests + ArgoCD</li>
+                                </ul>
+                            </div>
+
+                            <div class="achievement">
+                                <h4>Results:</h4>
+                                <ul class="steps-list">
+                                    <li>🚀 Cleaner project structure</li>
+                                    <li>⚡ Faster CI/CD pipeline</li>
+                                    <li>🛠️ Reusable cleanup tool created</li>
+                                    <li>📚 Comprehensive documentation</li>
+                                    <li>✅ Zero functionality loss</li>
+                                </ul>
                             </div>
                         </div>
 
